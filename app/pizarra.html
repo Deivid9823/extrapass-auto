@@ -239,9 +239,9 @@ const BASE = [
     {mv:{o5:[82,96,"screen"]},note:"El 5 sube a bloquear."},
     {mv:{o1:[112,64,"drib"],o5:[84,28,"cut"],o3:[136,100,"cut"]},note:"Ataque del bloqueo; el 3 se levanta."},
     {ball:"o5",note:"Pase al 5 si la ayuda llega tarde."}],"Cinco abiertos."),
-  mk("Dar y cortar","Ataque posicional",{o1:[75,98],o2:[22,72],o3:[128,72],o4:[8,10],o5:[142,10]},"o1",[
+  mk("Pasar y cortar","Ataque posicional",{o1:[75,98],o2:[22,72],o3:[128,72],o4:[8,10],o5:[142,10]},"o1",[
     {ball:"o2",note:"Pase al ala."},
-    {mv:{o1:[62,18,"cut"],o3:[75,96,"cut"]},note:"Dar y cortar. El 3 rellena arriba."},
+    {mv:{o1:[62,18,"cut"],o3:[75,96,"cut"]},note:"Pasar y cortar. El 3 rellena arriba."},
     {ball:"o1",note:"Pase de vuelta al 1 en el corte."}]),
   mk("Contraataque en tres calles","Transición",{o1:[75,136],o2:[18,132],o3:[132,132],o4:[60,140],o5:[95,140]},"o1",[
     {mv:{o1:[75,82,"drib"],o2:[12,44,"cut"],o3:[138,44,"cut"]},note:"El 1 sube botando; las alas por fuera."},
@@ -286,7 +286,7 @@ const FICHAS = {
   "Bloqueo directo central": F("Individual","Penetración o continuación con cuatro abiertas","1-4 abierto con el 5 en lo alto",
     ["El 5 coloca el bloqueo con ángulo para mandar al 1 hacia el lado del 3.","El 1 ataca con dos botes fuertes hacia el codo para fijar a la defensora del 5.","El 3 se levanta (lift) para dar una línea de pase limpia."],
     "Si cambian, el 5 sella a la defensora pequeña en la pintura y pide el balón dentro.","El 1 se aleja del bloqueo en abierto y no obliga a nadie a ayudar.","Pick and roll central, la acción más usada del baloncesto actual."),
-  "Dar y cortar": F("Individual","Bandeja tras el corte","1-2-2 abierto",
+  "Pasar y cortar": F("Individual","Bandeja tras el corte","1-2-2 abierto",
     ["Pasa y corta en el momento, sin quedarte mirando el pase.","Corta por delante si tu defensora mira el balón; por detrás si se va hacia el balón.","El 3 rellena arriba para que siempre haya una seguridad."],
     "Si la defensora del 1 salta hacia el balón, el 1 abre hacia la esquina y el ala ataca el espacio de arriba.","Cortar despacio o en curva: el corte se ve venir y la ayuda llega.","Fundamento del ataque en movimiento («give and go»)."),
   "Contraataque en tres calles": F("Defensa replegando","Bandeja o tiro antes de que la defensa se coloque","Tres calles: balón por el centro, alas abiertas",
@@ -313,7 +313,7 @@ const FICHAS = {
 };
 BASE.forEach(p => { p.ficha = FICHAS[p.name] || {}; p.tags = []; if(p.cat === "Contra zona") p.cat = "Contra zona 2-3"; });
 BASE.find(p => p.name === "Puerta atrás desde el poste alto").tags.push("carril");
-BASE.find(p => p.name === "Dar y cortar").tags.push("carril");
+BASE.find(p => p.name === "Pasar y cortar").tags.push("carril");
 
 /* jugadas de Tendencias y de Estilo de entrenador */
 function extra(p, ficha, tags, free){ p.ficha = ficha; p.tags = tags; if(free) p.free = true; p.steps[p.steps.length-1].shot = true; return p; }
@@ -857,7 +857,7 @@ const T4 = [
       "Las dos bloqueadoras continúan a la vez y se roban el espacio.",
       "Doble drag («double drag»), como el «77» de los Warriors con Curry (Slapping Glass, «Double Drag Screens: A Primer»)."), ["t4"]), "Transición", fin, {serie:"drag2-t4", branchAt:2, read:rd})),
   /* --- Pistol / 21 (Basketball Action Dictionary) --- */
-  ...[["dar y cortar","La defensora del 1 se relaja tras el pase",[
+  ...[["pasar y cortar","La defensora del 1 se relaja tras el pase",[
         {mv:{o1:[44,22,"cut"]},note:"La defensora del 1 se queda mirando el pase: el 1 corta directo al aro."},
         {ball:"o1",note:"El 2 le devuelve el balón: bandeja."}],"Aro"],
       ["bloqueo directo del 5","Niegan el corte del 1",[
@@ -868,7 +868,7 @@ const T4 = [
     {ball:"o2",note:"Pase al 2: empieza el «21»."}].concat(tail),"Transición tras rebote."),
     F("Defensa replegando","Bandeja del 1 o bloqueo directo del 5 para el 2","Pistol: cinco abiertas en las primeras acciones",
       ["El 2 vuelve hacia el balón a la altura del tiro libre, no se queda en la esquina.","El 5 se para detrás del balón: será el bloqueador.","Todo pasa en el lado del balón: el lado débil queda vacío para la penetración."],
-      k === "dar y cortar" ? "Si niegan el corte del 1, el 5 baja a bloquear al 2." : "Si la defensora del 1 se relaja, corte al aro y bandeja.",
+      k === "pasar y cortar" ? "Si niegan el corte del 1, el 5 baja a bloquear al 2." : "Si la defensora del 1 se relaja, corte al aro y bandeja.",
       "Pararse a organizar: el «21» funciona porque la defensa todavía no está colocada.",
       "«Pistol» o «21», popularizado por los Suns de Mike D'Antoni y Steve Nash (The Basketball Action Dictionary)."), ["t4"]), "Transición", fin, {serie:"pistol-t4", branchAt:2, read:rd})),
   tag1(extra(mk("Ram: bloqueo al bloqueador","Bloqueo directo",{o1:[75,106],o5:[102,22],o2:[128,60],o4:[24,66],o3:[8,14]},"o1",[
