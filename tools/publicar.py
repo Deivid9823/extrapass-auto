@@ -14,12 +14,14 @@ from zoneinfo import ZoneInfo
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 CONT = ROOT / "contenido"
 API = "https://graph.instagram.com"
+API_FB = "https://graph.facebook.com/v23.0"
+IG_USER_ID = os.environ.get("IG_USER_ID", "").strip()
 TOKEN = os.environ.get("IG_TOKEN", "").strip()
 BASE = os.environ.get("BASE_URL", "").rstrip("/")
 PRUEBA = os.environ.get("PRUEBA") == "1"
 
 
-def api(method, path, **params):
+def api(method, path, _quiet=False, **params):
     params["access_token"] = TOKEN
     data = urllib.parse.urlencode(params).encode()
     url = f"{API}/{path}"
@@ -29,6 +31,8 @@ def api(method, path, **params):
             return json.load(r)
     except urllib.error.HTTPError as e:
         body = e.read().decode(errors="replace").replace(TOKEN, "***")
+        if _quiet:
+            return None
         sys.exit(f"Error de Instagram en {path}: {e.code} {body}")
 
 
@@ -54,8 +58,17 @@ def esperar(cid):
 def main():
     if not TOKEN or not BASE:
         sys.exit("Faltan IG_TOKEN o BASE_URL")
-    me = api("GET", "me", fields="user_id,username")
-    uid = me["user_id"]
+    global API
+    me = api("GET", "me", _quiet=True, fields="user_id,username")
+    if me and me.get("user_id"):
+        uid = me["user_id"]
+    else:
+        # token de inicio de sesión unificado o de usuario del sistema: va por graph.facebook.com
+        API = API_FB
+        if not IG_USER_ID:
+            sys.exit("Este token no es de inicio de sesión de Instagram. Añade la variable IG_USER_ID con el identificador de la cuenta de Instagram que sale en el panel de Meta.")
+        uid = IG_USER_ID
+        me = api("GET", uid, fields="username")
     print(f"Cuenta: @{me.get('username')}")
     hoy = os.environ.get("FECHA") or datetime.datetime.now(ZoneInfo("Europe/Madrid")).date().isoformat()
     cal = json.loads((CONT / "calendario.json").read_text(encoding="utf-8"))
