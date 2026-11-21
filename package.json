@@ -1,0 +1,9 @@
+{
+  "name": "extrapass-auto",
+  "private": true,
+  "scripts": {
+    "generar": "node tools/generar.js 4",
+    "prueba": "python tools/publicar.py"
+  },
+  "devDependencies": { "playwright": "1.48.2" }
+}

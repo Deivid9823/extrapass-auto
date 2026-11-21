@@ -1,0 +1,182 @@
+[
+ {
+  "fecha": "2026-11-23",
+  "hora": "20:00",
+  "formato": "carrusel",
+  "tipo": "jugada",
+  "titulo": "Dar y cortar",
+  "carpeta": "2026-11-23_lunes_carrusel_jugada_dar_y_cortar",
+  "piezas": 7
+ },
+ {
+  "fecha": "2026-11-24",
+  "hora": "20:00",
+  "formato": "reel",
+  "tipo": "lectura",
+  "titulo": "Floppy dos finales",
+  "carpeta": "2026-11-24_martes_reel_lectura_floppy_dos_finales",
+  "piezas": 1
+ },
+ {
+  "fecha": "2026-11-25",
+  "hora": "20:00",
+  "formato": "carrusel",
+  "tipo": "cobertura",
+  "titulo": "Spain pick and roll contra Show",
+  "carpeta": "2026-11-25_miercoles_carrusel_cobertura_spain_pick_and_roll_contra_show",
+  "piezas": 7
+ },
+ {
+  "fecha": "2026-11-26",
+  "hora": "20:00",
+  "formato": "reel",
+  "tipo": "cobertura",
+  "titulo": "Bloqueo directo con esquina vacía contra Drop",
+  "carpeta": "2026-11-26_jueves_reel_cobertura_bloqueo_directo_con_esquina_vacia_contra",
+  "piezas": 1
+ },
+ {
+  "fecha": "2026-11-27",
+  "hora": "20:00",
+  "formato": "carrusel",
+  "tipo": "lectura",
+  "titulo": "Eagle lecturas",
+  "carpeta": "2026-11-27_viernes_carrusel_lectura_eagle_lecturas",
+  "piezas": 6
+ },
+ {
+  "fecha": "2026-11-30",
+  "hora": "20:00",
+  "formato": "carrusel",
+  "tipo": "jugada",
+  "titulo": "Contraataque en tres calles",
+  "carpeta": "2026-11-30_lunes_carrusel_jugada_contraataque_en_tres_calles",
+  "piezas": 7
+ },
+ {
+  "fecha": "2026-12-01",
+  "hora": "20:00",
+  "formato": "reel",
+  "tipo": "lectura",
+  "titulo": "1-3-1: sobrecarga de Sean Miller dos finales",
+  "carpeta": "2026-12-01_martes_reel_lectura_1_3_1_sobrecarga_de_sean_miller_dos_fina",
+  "piezas": 1
+ },
+ {
+  "fecha": "2026-12-02",
+  "hora": "20:00",
+  "formato": "carrusel",
+  "tipo": "cobertura",
+  "titulo": "Bloqueo directo en transición (drag) contra Cambio",
+  "carpeta": "2026-12-02_miercoles_carrusel_cobertura_bloqueo_directo_en_transicion_drag_contr",
+  "piezas": 7
+ },
+ {
+  "fecha": "2026-12-03",
+  "hora": "20:00",
+  "formato": "reel",
+  "tipo": "cobertura",
+  "titulo": "Continuación corta ante el 2x1 contra Ice",
+  "carpeta": "2026-12-03_jueves_reel_cobertura_continuacion_corta_ante_el_2x1_contra_ic",
+  "piezas": 1
+ },
+ {
+  "fecha": "2026-12-04",
+  "hora": "20:00",
+  "formato": "carrusel",
+  "tipo": "lectura",
+  "titulo": "1-2-2: lado corto lecturas",
+  "carpeta": "2026-12-04_viernes_carrusel_lectura_1_2_2_lado_corto_lecturas",
+  "piezas": 6
+ },
+ {
+  "fecha": "2026-12-07",
+  "hora": "20:00",
+  "formato": "carrusel",
+  "tipo": "jugada",
+  "titulo": "Saque de fondo «Box»",
+  "carpeta": "2026-12-07_lunes_carrusel_jugada_saque_de_fondo_box",
+  "piezas": 6
+ },
+ {
+  "fecha": "2026-12-08",
+  "hora": "20:00",
+  "formato": "reel",
+  "tipo": "lectura",
+  "titulo": "Corte UCLA dos finales",
+  "carpeta": "2026-12-08_martes_reel_lectura_corte_ucla_dos_finales",
+  "piezas": 1
+ },
+ {
+  "fecha": "2026-12-09",
+  "hora": "20:00",
+  "formato": "carrusel",
+  "tipo": "cobertura",
+  "titulo": "Un bloqueo y esquina contra 2x1",
+  "carpeta": "2026-12-09_miercoles_carrusel_cobertura_un_bloqueo_y_esquina_contra_2x1",
+  "piezas": 8
+ },
+ {
+  "fecha": "2026-12-10",
+  "hora": "20:00",
+  "formato": "reel",
+  "tipo": "cobertura",
+  "titulo": "Pick and pop del 4 contra Show",
+  "carpeta": "2026-12-10_jueves_reel_cobertura_pick_and_pop_del_4_contra_show",
+  "piezas": 1
+ },
+ {
+  "fecha": "2026-12-11",
+  "hora": "20:00",
+  "formato": "carrusel",
+  "tipo": "lectura",
+  "titulo": "Flex lecturas",
+  "carpeta": "2026-12-11_viernes_carrusel_lectura_flex_lecturas",
+  "piezas": 6
+ },
+ {
+  "fecha": "2026-12-14",
+  "hora": "20:00",
+  "formato": "carrusel",
+  "tipo": "jugada",
+  "titulo": "Contra zona 2-3: sobrecarga",
+  "carpeta": "2026-12-14_lunes_carrusel_jugada_contra_zona_2_3_sobrecarga",
+  "piezas": 7
+ },
+ {
+  "fecha": "2026-12-15",
+  "hora": "20:00",
+  "formato": "reel",
+  "tipo": "lectura",
+  "titulo": "Mano a mano en el codo dos finales",
+  "carpeta": "2026-12-15_martes_reel_lectura_mano_a_mano_en_el_codo_dos_finales",
+  "piezas": 1
+ },
+ {
+  "fecha": "2026-12-16",
+  "hora": "20:00",
+  "formato": "carrusel",
+  "tipo": "cobertura",
+  "titulo": "Rechazo y sello contra Drop",
+  "carpeta": "2026-12-16_miercoles_carrusel_cobertura_rechazo_y_sello_contra_drop",
+  "piezas": 6
+ },
+ {
+  "fecha": "2026-12-17",
+  "hora": "20:00",
+  "formato": "reel",
+  "tipo": "cobertura",
+  "titulo": "Cambio de ángulo (Varejao) contra Cambio",
+  "carpeta": "2026-12-17_jueves_reel_cobertura_cambio_de_angulo_varejao_contra_cambio",
+  "piezas": 1
+ },
+ {
+  "fecha": "2026-12-18",
+  "hora": "20:00",
+  "formato": "carrusel",
+  "tipo": "lectura",
+  "titulo": "Transición Carolina lecturas",
+  "carpeta": "2026-12-18_viernes_carrusel_lectura_transicion_carolina_lecturas",
+  "piezas": 7
+ }
+]

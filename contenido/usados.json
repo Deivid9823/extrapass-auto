@@ -1,0 +1,41 @@
+{
+ "jugada": [
+  "Dar y cortar",
+  "Contraataque en tres calles",
+  "Saque de fondo «Box»",
+  "Contra zona 2-3: sobrecarga"
+ ],
+ "cobertura": [
+  "Cuernos con bloqueo directo|blitz",
+  "Bloqueo directo central|switch",
+  "Spain pick and roll|show",
+  "Bloqueo directo en transición (drag)|switch",
+  "Un bloqueo y esquina|blitz",
+  "Rechazo y sello|drop"
+ ],
+ "lectura": [
+  "iverson-pm",
+  "floppy-t1",
+  "eagle-t1",
+  "miller-131",
+  "122-lc",
+  "ucla-t3",
+  "flex-t3",
+  "dho-t3",
+  "carolina-t4"
+ ],
+ "reel": [
+  "Cuernos con bloqueo directo|blitz",
+  "Bloqueo directo central|switch",
+  "serie:iverson-pm",
+  "serie:floppy-t1",
+  "Bloqueo directo con esquina vacía|drop",
+  "serie:miller-131",
+  "Continuación corta ante el 2x1|ice",
+  "serie:ucla-t3",
+  "Pick and pop del 4|show",
+  "serie:dho-t3",
+  "Cambio de ángulo (Varejao)|switch"
+ ],
+ "ultimo": "2026-12-18"
+}
