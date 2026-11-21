@@ -16,6 +16,9 @@ CONT = ROOT / "contenido"
 API = "https://graph.instagram.com"
 API_FB = "https://graph.facebook.com/v23.0"
 IG_USER_ID = os.environ.get("IG_USER_ID", "").strip()
+_idf = pathlib.Path(__file__).resolve().parent / "ig_user_id.txt"
+if not IG_USER_ID and _idf.exists():
+    IG_USER_ID = _idf.read_text(encoding="utf-8").strip()
 TOKEN = os.environ.get("IG_TOKEN", "").strip()
 BASE = os.environ.get("BASE_URL", "").rstrip("/")
 PRUEBA = os.environ.get("PRUEBA") == "1"
@@ -66,7 +69,7 @@ def main():
         # token de inicio de sesión unificado o de usuario del sistema: va por graph.facebook.com
         API = API_FB
         if not IG_USER_ID:
-            sys.exit("Este token no es de inicio de sesión de Instagram. Añade la variable IG_USER_ID con el identificador de la cuenta de Instagram que sale en el panel de Meta.")
+            sys.exit("Este token no es de inicio de sesión de Instagram. Escribe en tools/ig_user_id.txt el identificador de la cuenta de Instagram que sale en el panel de Meta.")
         uid = IG_USER_ID
         me = api("GET", uid, fields="username")
     print(f"Cuenta: @{me.get('username')}")
